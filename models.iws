@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="models:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,9 +24,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0a06840-f76d-421e-b0e4-348bb01199d1" name="Default Changelist" comment="updated helper in as UUID">
+    <list default="true" id="b0a06840-f76d-421e-b0e4-348bb01199d1" name="Default Changelist" comment="actions constructor activitiy as string">
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/main/java/data/storable/actions/ActionsFreedomImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/data/storable/actions/ActionsFreedomImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/main/java/data/storable/actions/ActionsNeighbourhoodImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/data/storable/actions/ActionsNeighbourhoodImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/data/storable/user/UserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/data/storable/user/UserImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models.iml" beforeDir="false" afterPath="$PROJECT_DIR$/models.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/models.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models.iws" beforeDir="false" afterPath="$PROJECT_DIR$/models.iws" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,9 +123,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.1328125" />
+    <property name="project.structure.side.proportion" value="0.18993135" />
     <property name="settings.editor.selected.configurable" value="settings.saveactions" />
   </component>
   <component name="RecentsManager">
@@ -197,7 +207,11 @@
       <workItem from="1610291354590" duration="397000" />
       <workItem from="1610291774047" duration="432000" />
       <workItem from="1610293149906" duration="1527000" />
-      <workItem from="1610295446164" duration="186000" />
+      <workItem from="1610295446164" duration="236000" />
+      <workItem from="1610296544880" duration="2435000" />
+      <workItem from="1610299871730" duration="775000" />
+      <workItem from="1610300687756" duration="261000" />
+      <workItem from="1610302440635" duration="136000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1610128897171</created>
@@ -234,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610294665725</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="actions constructor activitiy as string">
+      <created>1610295664006</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1610295664006</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,10 +280,15 @@
     <MESSAGE value="updated Actions extended Location" />
     <MESSAGE value="updated Location in all Actions" />
     <MESSAGE value="updated helper in as UUID" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated helper in as UUID" />
+    <MESSAGE value="actions constructor activitiy as string" />
+    <option name="LAST_COMMIT_MESSAGE" value="actions constructor activitiy as string" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="761" y="279" key="#Project_Structure" timestamp="1610300565889">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state x="761" y="279" key="#Project_Structure/0.0.2560.1409@0.0.2560.1409" timestamp="1610300565889" />
     <state x="1086" y="411" key="#com.intellij.ide.util.MemberChooser" timestamp="1610294094542">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
@@ -277,20 +303,24 @@
     </state>
     <state x="939" y="381" key="FileChooserDialogImpl/0.0.2560.1409@0.0.2560.1409" timestamp="1610291410402" />
     <state x="939" y="381" key="FileChooserDialogImpl/3840.1080.1920.1034/0.0.2560.1409@0.0.2560.1409" timestamp="1610128868872" />
-    <state x="1127" y="627" key="Github.Dialog.Accounts.Choose" timestamp="1610294674172">
+    <state x="1127" y="627" key="Github.Dialog.Accounts.Choose" timestamp="1610295670873">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state x="1127" y="627" key="Github.Dialog.Accounts.Choose/0.0.2560.1409@0.0.2560.1409" timestamp="1610294674172" />
-    <state x="782" y="350" key="SettingsEditor" timestamp="1610294486317">
+    <state x="1127" y="627" key="Github.Dialog.Accounts.Choose/0.0.2560.1409@0.0.2560.1409" timestamp="1610295670873" />
+    <state x="782" y="350" key="SettingsEditor" timestamp="1610300916528">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state x="782" y="350" key="SettingsEditor/0.0.2560.1409@0.0.2560.1409" timestamp="1610294486317" />
+    <state x="782" y="350" key="SettingsEditor/0.0.2560.1409@0.0.2560.1409" timestamp="1610300916528" />
     <state x="782" y="350" key="SettingsEditor/3840.1080.1920.1034/0.0.2560.1409@0.0.2560.1409" timestamp="1610288907207" />
-    <state x="873" y="425" key="Vcs.Push.Dialog.v2" timestamp="1610294668454">
+    <state x="873" y="425" key="Vcs.Push.Dialog.v2" timestamp="1610295666707">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state x="873" y="425" key="Vcs.Push.Dialog.v2/0.0.2560.1409@0.0.2560.1409" timestamp="1610294668454" />
+    <state x="873" y="425" key="Vcs.Push.Dialog.v2/0.0.2560.1409@0.0.2560.1409" timestamp="1610295666707" />
     <state x="873" y="425" key="Vcs.Push.Dialog.v2/3840.1080.1920.1034/0.0.2560.1409@0.0.2560.1409" timestamp="1610284410469" />
+    <state x="1085" y="573" key="classpath-attribute-editor" timestamp="1610300551127">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state x="1085" y="573" key="classpath-attribute-editor/0.0.2560.1409@0.0.2560.1409" timestamp="1610300551127" />
     <state x="1052" y="407" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1610285005240">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>

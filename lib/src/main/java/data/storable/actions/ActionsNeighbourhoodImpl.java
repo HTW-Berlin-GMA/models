@@ -30,6 +30,11 @@ public class ActionsNeighbourhoodImpl implements ActionsNeighbourhood {
     private Boolean isCompleted;
     private User helper;
 
+    public ActionsNeighbourhoodImpl(String name, UUID id) {
+        this.name = name;
+        this.id = id;
+    }
+
     public ActionsNeighbourhoodImpl(String name, User owner, UUID id) {
         this.name = name;
         this.owner = owner;

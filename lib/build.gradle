@@ -9,8 +9,12 @@
 plugins {
     // Apply the java-library plugin for API and implementation separation.
     id 'java-library'
-	id 'idea'
+    id 'idea'
+    id 'maven-publish'
 }
+
+group = 'edu.gma'
+version = '1.0'
 
 repositories {
     // Use JCenter for resolving dependencies.
@@ -44,5 +48,65 @@ tasks.named('jar') {
 }
 
 java {
+    // withJavadocJar()
     withSourcesJar()
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            artifactId = 'gma-models'
+            from components.java
+            versionMapping {
+                usage('java-api') {
+                    fromResolutionOf('runtimeClasspath')
+                }
+                usage('java-runtime') {
+                    fromResolutionResult()
+                }
+            }
+            pom {
+                name = 'My Library'
+                description = 'A concise description of my library'
+                url = 'https://github.com/HTW-Berlin-GMA/models.git'
+                properties = [
+                        myProp          : "value",
+                        "prop.with.dots": "anotherValue"
+                ]
+                licenses {
+                    license {
+                        name = 'The Apache License, Version 2.0'
+                        url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                developers {
+                    developer {
+                        id = 'DEIK'
+                        name = 'DEIK'
+                        email = 'deik@example.com'
+                    }
+                }
+                scm {
+                    connection = 'scm:git:https://github.com/HTW-Berlin-GMA/models.git'
+                    developerConnection = 'scm:git:https://github.com/HTW-Berlin-GMA/models.git'
+                    url = 'https://github.com/HTW-Berlin-GMA/'
+                }
+            }
+        }
+    }
+    repositories {
+        maven {
+            // change URLs to point to your repos, e.g. http://my.org/repo
+            def releasesRepoUrl = "$buildDir/repos/releases"
+            def snapshotsRepoUrl = "$buildDir/repos/snapshots"
+            url = version.endsWith('SNAPSHOT') ? snapshotsRepoUrl : releasesRepoUrl
+        }
+    }
+}
+
+
+javadoc {
+    if (JavaVersion.current().isJava9Compatible()) {
+        options.addBooleanOption('html5', true)
+    }
 }

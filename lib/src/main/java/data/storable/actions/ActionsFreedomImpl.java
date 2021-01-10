@@ -34,6 +34,11 @@ public class ActionsFreedomImpl implements ActionsFreedom {
     private User owner;
     private UUID id;
 
+    public ActionsFreedomImpl(String name, UUID id) {
+        this.name = name;
+        this.id = id;
+    }
+
     public ActionsFreedomImpl(String name, User owner, UUID id) {
         this.name = name;
         this.owner = owner;

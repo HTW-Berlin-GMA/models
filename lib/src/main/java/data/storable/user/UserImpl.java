@@ -6,10 +6,9 @@
 
 package data.storable.user;
 
-import data.storable.actions.*;
+import data.storable.actions.Actions;
+import data.storable.actions.Activities;
 
-import java.math.BigDecimal;
-import java.sql.Timestamp;
 import java.util.*;
 
 public class UserImpl implements User {
@@ -29,6 +28,16 @@ public class UserImpl implements User {
     private List<Actions> listFavorites;
     private List<Actions> listParticipatedActions;
     private Map<String, List<User>> mapContacts;
+
+    public UserImpl(String id, String username) {
+        this.id = UUID.fromString(id);
+        this.username = username;
+        this.registryDate = new java.sql.Date((new Date()).getTime());
+        this.listParticipatedActions = new ArrayList<>();
+        this.listInterests = new ArrayList<>();
+        this.listFavorites = new ArrayList<>();
+        this.mapContacts = new HashMap<>();
+    }
 
     public UserImpl(UUID id, String username, Date birthdate, String eMailAddress) {
         this.id = id;
