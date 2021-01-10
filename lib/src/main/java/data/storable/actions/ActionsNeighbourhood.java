@@ -6,7 +6,7 @@
 
 package data.storable.actions;
 
-import data.storable.user.User;
+import data.storable.user.*;
 
 public interface ActionsNeighbourhood extends Actions {
     boolean setCompleted(Boolean statusComplete);

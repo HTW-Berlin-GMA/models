@@ -6,8 +6,7 @@
 
 package data.storable.user;
 
-import data.storable.actions.Actions;
-import data.storable.actions.Activities;
+import data.storable.actions.*;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;

@@ -6,10 +6,8 @@
 
 package data.storable.user;
 
-import data.storable.Location;
-import data.storable.Storable;
-import data.storable.actions.Actions;
-import data.storable.actions.Activities;
+import data.storable.*;
+import data.storable.actions.*;
 
 import java.util.Date;
 import java.util.List;

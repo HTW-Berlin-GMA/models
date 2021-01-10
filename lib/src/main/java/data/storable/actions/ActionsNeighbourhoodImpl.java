@@ -6,7 +6,7 @@
 
 package data.storable.actions;
 
-import data.storable.user.User;
+import data.storable.user.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

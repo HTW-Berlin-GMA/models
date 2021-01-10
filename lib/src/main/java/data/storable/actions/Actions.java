@@ -6,13 +6,13 @@
 
 package data.storable.actions;
 
-import data.storable.Storable;
-import data.storable.user.User;
+import data.storable.*;
+import data.storable.user.*;
 
 import java.time.LocalDate;
 import java.time.Period;
 
-public interface Actions extends Storable {
+public interface Actions extends Storable, Location {
     boolean setActionname(String name);
 
     boolean setActivity(Activities activity);
