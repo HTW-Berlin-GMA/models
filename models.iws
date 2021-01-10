@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0a06840-f76d-421e-b0e4-348bb01199d1" name="Default Changelist" comment="init">
+    <list default="true" id="b0a06840-f76d-421e-b0e4-348bb01199d1" name="Default Changelist" comment="updated Actions extended Location">
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/data/storable/actions/ActionsImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/main/java/data/storable/actions/Actions.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/data/storable/actions/Actions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/data/storable/actions/ActionsFreedom.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/data/storable/actions/ActionsFreedom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/data/storable/actions/ActionsFreedomImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/data/storable/actions/ActionsFreedomImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/data/storable/actions/ActionsNeighbourhood.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/data/storable/actions/ActionsNeighbourhood.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/data/storable/actions/ActionsNeighbourhoodImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/data/storable/actions/ActionsNeighbourhoodImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/data/storable/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/data/storable/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/data/storable/user/UserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/data/storable/user/UserImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models.iws" beforeDir="false" afterPath="$PROJECT_DIR$/models.iws" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +72,13 @@
     <breakpoint_rules converted="true" />
     <ui_properties converted="true" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -70,11 +90,6 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1mnHEVc3v7TwlHM2IIHHRDHUD2J" />
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state />
-    </entry>
-  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
@@ -95,7 +110,16 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="data.storable.user" />
+      <recent name="data.storable.actions" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -148,16 +172,8 @@
         <option name="BuildArtifacts" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="aws.lambda" factoryName="Remote">
-      <option name="credentialProviderId" />
-      <option name="regionId" />
-      <option name="functionName" />
-      <option name="input" />
-      <option name="inputIsFile" value="false" />
-      <method v="2" />
-    </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -172,6 +188,10 @@
       <workItem from="1610125471570" duration="196000" />
       <workItem from="1610126424925" duration="2456000" />
       <workItem from="1610283893413" duration="436000" />
+      <workItem from="1610284356566" duration="100000" />
+      <workItem from="1610284913735" duration="1214000" />
+      <workItem from="1610289324886" duration="593000" />
+      <workItem from="1610291354590" duration="336000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1610128897171</created>
@@ -180,34 +200,66 @@
       <option name="project" value="LOCAL" />
       <updated>1610128897171</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="updated Actions extended Location">
+      <created>1610284408563</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610284408563</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="updatet Actions extended Location" />
+    <MESSAGE value="updated Actions extended Location" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated Actions extended Location" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="939" y="381" key="FileChooserDialogImpl" timestamp="1610128868872">
+    <state x="1086" y="411" key="#com.intellij.ide.util.MemberChooser" timestamp="1610285213397">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
+    <state x="1086" y="411" key="#com.intellij.ide.util.MemberChooser/3840.1080.1920.1034/0.0.2560.1409@0.0.2560.1409" timestamp="1610285213397" />
+    <state x="939" y="381" key="FileChooserDialogImpl" timestamp="1610291410402">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state x="939" y="381" key="FileChooserDialogImpl/0.0.2560.1409@0.0.2560.1409" timestamp="1610291410402" />
     <state x="939" y="381" key="FileChooserDialogImpl/3840.1080.1920.1034/0.0.2560.1409@0.0.2560.1409" timestamp="1610128868872" />
-    <state x="782" y="350" key="SettingsEditor" timestamp="1610125287695">
+    <state x="782" y="350" key="SettingsEditor" timestamp="1610291591976">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state x="782" y="350" key="SettingsEditor/3840.1080.1920.1034/0.0.2560.1409@0.0.2560.1409" timestamp="1610125287695" />
-    <state x="873" y="425" key="Vcs.Push.Dialog.v2" timestamp="1610128908409">
+    <state x="782" y="350" key="SettingsEditor/0.0.2560.1409@0.0.2560.1409" timestamp="1610291591976" />
+    <state x="782" y="350" key="SettingsEditor/3840.1080.1920.1034/0.0.2560.1409@0.0.2560.1409" timestamp="1610288907207" />
+    <state x="873" y="425" key="Vcs.Push.Dialog.v2" timestamp="1610284410469">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state x="873" y="425" key="Vcs.Push.Dialog.v2/3840.1080.1920.1034/0.0.2560.1409@0.0.2560.1409" timestamp="1610128908409" />
-    <state x="750" y="247" key="new project wizard" timestamp="1610126642857">
+    <state x="873" y="425" key="Vcs.Push.Dialog.v2/3840.1080.1920.1034/0.0.2560.1409@0.0.2560.1409" timestamp="1610284410469" />
+    <state x="1052" y="407" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1610285005240">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
+    <state x="1052" y="407" key="com.intellij.testIntegration.createTest.CreateTestDialog/3840.1080.1920.1034/0.0.2560.1409@0.0.2560.1409" timestamp="1610285005240" />
+    <state x="750" y="247" key="new project wizard" timestamp="1610291617618">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state x="750" y="247" key="new project wizard/0.0.2560.1409@0.0.2560.1409" timestamp="1610291617618" />
     <state x="750" y="247" key="new project wizard/3840.1080.1920.1034/0.0.2560.1409@0.0.2560.1409" timestamp="1610126642857" />
     <state x="1111" y="496" key="svn.repositoryBrowser" timestamp="1610128861677">
       <screen x="0" y="0" width="2560" height="1409" />

@@ -15,7 +15,7 @@ import java.time.Period;
 public interface Actions extends Storable, Location {
     boolean setActionname(String name);
 
-    boolean setActivity(Activities activity);
+    boolean setActivity(String activity);
 
     boolean updateBeginDate(LocalDate dateBegin);
 
