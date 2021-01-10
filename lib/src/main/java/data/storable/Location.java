@@ -7,9 +7,9 @@
 package data.storable;
 
 public interface Location {
-    boolean setAddress(String address);
+    boolean setStreet(String street);
 
-    String getAddress();
+    String getStreet();
 
     boolean setHouseNumber(String houseNumber);
 

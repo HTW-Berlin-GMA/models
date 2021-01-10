@@ -20,8 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0a06840-f76d-421e-b0e4-348bb01199d1" name="Default Changelist" comment="updated Actions extended Location">
-      <change afterPath="$PROJECT_DIR$/lib/src/main/java/data/storable/actions/ActionsImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/data/storable/actions/Actions.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/data/storable/actions/Actions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/data/storable/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/data/storable/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/data/storable/actions/ActionsFreedomImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/data/storable/actions/ActionsFreedomImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/data/storable/actions/ActionsImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/data/storable/actions/ActionsNeighbourhoodImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/data/storable/actions/ActionsNeighbourhoodImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/data/storable/user/UserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/data/storable/user/UserImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models.iws" beforeDir="false" afterPath="$PROJECT_DIR$/models.iws" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,6 +84,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="f9fb75f5-9449-462d-b67a-61f8ec9ee0d0" />
   </component>
   <component name="ModuleEditorState">
     <option name="LAST_EDITED_MODULE_NAME" />
@@ -191,7 +197,8 @@
       <workItem from="1610284356566" duration="100000" />
       <workItem from="1610284913735" duration="1214000" />
       <workItem from="1610289324886" duration="593000" />
-      <workItem from="1610291354590" duration="336000" />
+      <workItem from="1610291354590" duration="397000" />
+      <workItem from="1610291774047" duration="363000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1610128897171</created>
@@ -207,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610284408563</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="updated Actions extended Location">
+      <created>1610291710005</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610291710005</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,23 +248,33 @@
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1086" y="411" key="#com.intellij.ide.util.MemberChooser" timestamp="1610285213397">
+    <state x="1086" y="411" key="#com.intellij.ide.util.MemberChooser" timestamp="1610292116981">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
+    <state x="1086" y="411" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1409@0.0.2560.1409" timestamp="1610292116981" />
     <state x="1086" y="411" key="#com.intellij.ide.util.MemberChooser/3840.1080.1920.1034/0.0.2560.1409@0.0.2560.1409" timestamp="1610285213397" />
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1610291976146">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1409@0.0.2560.1409" timestamp="1610291976146" />
     <state x="939" y="381" key="FileChooserDialogImpl" timestamp="1610291410402">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
     <state x="939" y="381" key="FileChooserDialogImpl/0.0.2560.1409@0.0.2560.1409" timestamp="1610291410402" />
     <state x="939" y="381" key="FileChooserDialogImpl/3840.1080.1920.1034/0.0.2560.1409@0.0.2560.1409" timestamp="1610128868872" />
+    <state x="1127" y="627" key="Github.Dialog.Accounts.Choose" timestamp="1610291740502">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state x="1127" y="627" key="Github.Dialog.Accounts.Choose/0.0.2560.1409@0.0.2560.1409" timestamp="1610291740502" />
     <state x="782" y="350" key="SettingsEditor" timestamp="1610291591976">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
     <state x="782" y="350" key="SettingsEditor/0.0.2560.1409@0.0.2560.1409" timestamp="1610291591976" />
     <state x="782" y="350" key="SettingsEditor/3840.1080.1920.1034/0.0.2560.1409@0.0.2560.1409" timestamp="1610288907207" />
-    <state x="873" y="425" key="Vcs.Push.Dialog.v2" timestamp="1610284410469">
+    <state x="873" y="425" key="Vcs.Push.Dialog.v2" timestamp="1610291713349">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
+    <state x="873" y="425" key="Vcs.Push.Dialog.v2/0.0.2560.1409@0.0.2560.1409" timestamp="1610291713349" />
     <state x="873" y="425" key="Vcs.Push.Dialog.v2/3840.1080.1920.1034/0.0.2560.1409@0.0.2560.1409" timestamp="1610284410469" />
     <state x="1052" y="407" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1610285005240">
       <screen x="0" y="0" width="2560" height="1409" />

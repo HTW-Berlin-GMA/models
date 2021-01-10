@@ -14,6 +14,11 @@ import java.time.Period;
 import java.util.UUID;
 
 public class ActionsNeighbourhoodImpl implements ActionsNeighbourhood {
+    private String street;
+    private String houseNumber;
+    private String postCode;
+    private String city;
+    private String country;
     private String name;
     private Activities activities;
     private LocalDate dateBegin;
@@ -71,8 +76,8 @@ public class ActionsNeighbourhoodImpl implements ActionsNeighbourhood {
     }
 
     @Override
-    public boolean setActivity(Activities activity) {
-        this.activities = activity;
+    public boolean setActivity(String activity) {
+        this.activities = Activities.valueOf(activity);
         return true;
     }
 
@@ -149,5 +154,60 @@ public class ActionsNeighbourhoodImpl implements ActionsNeighbourhood {
     @Override
     public User getHelper() {
         return this.helper;
+    }
+
+    @Override
+    public boolean setStreet(String street) {
+        this.street = street;
+        return true;
+    }
+
+    @Override
+    public String getStreet() {
+        return this.street;
+    }
+
+    @Override
+    public boolean setHouseNumber(String houseNumber) {
+        this.houseNumber = houseNumber;
+        return true;
+    }
+
+    @Override
+    public String getHouseNumber() {
+        return this.houseNumber;
+    }
+
+    @Override
+    public boolean setPostCode(String postCode) {
+        this.postCode = postCode;
+        return true;
+    }
+
+    @Override
+    public String getPostCode() {
+        return this.postCode;
+    }
+
+    @Override
+    public boolean setCity(String city) {
+        this.city = city;
+        return true;
+    }
+
+    @Override
+    public String getCity() {
+        return this.city;
+    }
+
+    @Override
+    public boolean setCountry(String country) {
+        this.country = country;
+        return true;
+    }
+
+    @Override
+    public String getCountry() {
+        return this.country;
     }
 }

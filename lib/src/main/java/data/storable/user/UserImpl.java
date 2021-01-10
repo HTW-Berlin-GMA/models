@@ -140,13 +140,13 @@ public class UserImpl implements User {
     }
 
     @Override
-    public boolean setAddress(String address) {
-        this.address = address;
+    public boolean setStreet(String street) {
+        this.address = street;
         return true;
     }
 
     @Override
-    public String getAddress() {
+    public String getStreet() {
         return address;
     }
 

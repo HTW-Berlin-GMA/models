@@ -10,7 +10,6 @@ import data.storable.*;
 import data.storable.user.*;
 import logic.exceptions.*;
 
-import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.List;
@@ -18,6 +17,11 @@ import java.util.Map;
 import java.util.UUID;
 
 public class ActionsFreedomImpl implements ActionsFreedom {
+    private String street;
+    private String houseNumber;
+    private String postCode;
+    private String city;
+    private String country;
     private Integer numberOfParticipants;
     private Integer maximalNumberOfParticipants;
     private List<Storable> listParticipants;
@@ -111,8 +115,8 @@ public class ActionsFreedomImpl implements ActionsFreedom {
     }
 
     @Override
-    public boolean setActivity(Activities activity) {
-        this.activities = activity;
+    public boolean setActivity(String activity) {
+        this.activities = Activities.valueOf(activity);
         return true;
     }
 
@@ -186,5 +190,60 @@ public class ActionsFreedomImpl implements ActionsFreedom {
         } else {
             throw new NoParticipantsCapacityException();
         }
+    }
+
+    @Override
+    public boolean setStreet(String street) {
+        this.street = street;
+        return true;
+    }
+
+    @Override
+    public String getStreet() {
+        return this.street;
+    }
+
+    @Override
+    public boolean setHouseNumber(String houseNumber) {
+        this.houseNumber = houseNumber;
+        return true;
+    }
+
+    @Override
+    public String getHouseNumber() {
+        return this.houseNumber;
+    }
+
+    @Override
+    public boolean setPostCode(String postCode) {
+        this.postCode = postCode;
+        return true;
+    }
+
+    @Override
+    public String getPostCode() {
+        return this.postCode;
+    }
+
+    @Override
+    public boolean setCity(String city) {
+        this.city = city;
+        return true;
+    }
+
+    @Override
+    public String getCity() {
+        return this.city;
+    }
+
+    @Override
+    public boolean setCountry(String country) {
+        this.country = country;
+        return true;
+    }
+
+    @Override
+    public String getCountry() {
+        return this.country;
     }
 }
