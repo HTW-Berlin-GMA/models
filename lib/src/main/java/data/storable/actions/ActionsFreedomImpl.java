@@ -87,6 +87,11 @@ public class ActionsFreedomImpl implements ActionsFreedom {
         this.id = id;
     }
 
+    public boolean setOwner(User owner) {
+        this.owner = owner;
+        return true;
+    }
+
     @Override
     public boolean setNumberOfParticipants(Integer numberOfParticipants) {
         this.numberOfParticipants = numberOfParticipants;
@@ -120,7 +125,7 @@ public class ActionsFreedomImpl implements ActionsFreedom {
     }
 
     @Override
-    public boolean setActionname(String name) {
+    public boolean setActionName(String name) {
         this.name = name;
         return true;
     }
@@ -150,7 +155,7 @@ public class ActionsFreedomImpl implements ActionsFreedom {
     }
 
     @Override
-    public String getActionname() {
+    public String getActionName() {
         return this.name;
     }
 
@@ -182,25 +187,6 @@ public class ActionsFreedomImpl implements ActionsFreedom {
     @Override
     public UUID getID() {
         return this.id;
-    }
-
-    private Integer giveParticipantsAmount() {
-        //TODO: BusinessLogic Oberserver, wenn Liste aktualisiert wird
-        Integer actuallyCapacity = listParticipants.size();
-        numberOfParticipants = actuallyCapacity;
-        return actuallyCapacity;
-    }
-
-    private boolean checkParticipantsCapacity() throws NoParticipantsCapacityException {
-        this.giveParticipantsAmount();
-
-        if (maximalNumberOfParticipants <= 0) {
-            return false;
-        } else if (maximalNumberOfParticipants > numberOfParticipants) {
-            return true;
-        } else {
-            throw new NoParticipantsCapacityException();
-        }
     }
 
     @Override
@@ -256,5 +242,25 @@ public class ActionsFreedomImpl implements ActionsFreedom {
     @Override
     public String getCountry() {
         return this.country;
+    }
+
+
+    private Integer giveParticipantsAmount() {
+        //TODO: BusinessLogic Oberserver, wenn Liste aktualisiert wird
+        Integer actuallyCapacity = listParticipants.size();
+        numberOfParticipants = actuallyCapacity;
+        return actuallyCapacity;
+    }
+
+    private boolean checkParticipantsCapacity() throws NoParticipantsCapacityException {
+        this.giveParticipantsAmount();
+
+        if (maximalNumberOfParticipants <= 0) {
+            return false;
+        } else if (maximalNumberOfParticipants > numberOfParticipants) {
+            return true;
+        } else {
+            throw new NoParticipantsCapacityException();
+        }
     }
 }

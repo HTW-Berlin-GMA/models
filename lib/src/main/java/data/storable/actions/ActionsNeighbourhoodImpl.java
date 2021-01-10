@@ -81,8 +81,13 @@ public class ActionsNeighbourhoodImpl implements ActionsNeighbourhood {
         this.helper = helper;
     }
 
+    public boolean setOwner(User owner) {
+        this.owner = owner;
+        return true;
+    }
+
     @Override
-    public boolean setActionname(String name) {
+    public boolean setActionName(String name) {
         this.name = name;
         return true;
     }
@@ -112,7 +117,7 @@ public class ActionsNeighbourhoodImpl implements ActionsNeighbourhood {
     }
 
     @Override
-    public String getActionname() {
+    public String getActionName() {
         return this.name;
     }
 
@@ -159,9 +164,9 @@ public class ActionsNeighbourhoodImpl implements ActionsNeighbourhood {
     }
 
     @Override
-    public boolean setHelper(Storage user_storage, UUID userID) {
+    public boolean setHelper(Storage user_storage, String userID) {
         for (Storable k : user_storage.getList()) {
-            if (k.getID().equals(userID)) {
+            if (k.getID().equals(UUID.fromString(userID))) {
                 this.helper = (User) k;
                 return true;
             }

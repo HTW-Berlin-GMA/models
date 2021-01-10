@@ -6,7 +6,7 @@
 
 package data.storable.actions;
 
-import data.storable.user.*;
+import data.storable.user.User;
 import data.storage.Storage;
 
 import java.util.UUID;
@@ -16,7 +16,7 @@ public interface ActionsNeighbourhood extends Actions {
 
     boolean setHelper(User helper);
 
-    boolean setHelper(Storage user_storage, UUID userID);
+    boolean setHelper(Storage user_storage, String userID);
 
     boolean isCompleted();
 

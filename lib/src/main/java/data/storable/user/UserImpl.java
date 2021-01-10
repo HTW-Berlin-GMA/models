@@ -69,6 +69,70 @@ public class UserImpl implements User {
         this.mapContacts = mapContacts;
     }
 
+    public UUID getId() {
+        return id;
+    }
+
+    public void setId(UUID id) {
+        this.id = id;
+    }
+
+    public String geteMailAddress() {
+        return eMailAddress;
+    }
+
+    public void seteMailAddress(String eMailAddress) {
+        this.eMailAddress = eMailAddress;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public Date getRegistryDate() {
+        return registryDate;
+    }
+
+    public void setRegistryDate(Date registryDate) {
+        this.registryDate = registryDate;
+    }
+
+    public List<Activities> getListInterests() {
+        return listInterests;
+    }
+
+    public void setListInterests(List<Activities> listInterests) {
+        this.listInterests = listInterests;
+    }
+
+    public List<Actions> getListFavorites() {
+        return listFavorites;
+    }
+
+    public void setListFavorites(List<Actions> listFavorites) {
+        this.listFavorites = listFavorites;
+    }
+
+    public List<Actions> getListParticipatedActions() {
+        return listParticipatedActions;
+    }
+
+    public void setListParticipatedActions(List<Actions> listParticipatedActions) {
+        this.listParticipatedActions = listParticipatedActions;
+    }
+
+    public Map<String, List<User>> getMapContacts() {
+        return mapContacts;
+    }
+
+    public void setMapContacts(Map<String, List<User>> mapContacts) {
+        this.mapContacts = mapContacts;
+    }
+
     @Override
     public boolean setUsername(String username) {
         this.username = username;
