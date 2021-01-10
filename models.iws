@@ -25,13 +25,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0a06840-f76d-421e-b0e4-348bb01199d1" name="Default Changelist" comment="storable constructor - name &amp;&amp; uuid">
+      <change afterPath="$PROJECT_DIR$/lib/src/test/java/data/storable/StorableTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/lib.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lib/lib.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/data/storable/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/data/storable/user/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/main/java/data/storable/user/UserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/data/storable/user/UserImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/models.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models.iws" beforeDir="false" afterPath="$PROJECT_DIR$/models.iws" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/models_jar/models.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/models_jar/models.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lib/data/storable/actions/Actions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lib/data/storable/actions/Actions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lib/data/storable/actions/ActionsFreedomImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lib/data/storable/actions/ActionsFreedomImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lib/data/storable/actions/ActionsNeighbourhood.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lib/data/storable/actions/ActionsNeighbourhood.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lib/data/storable/actions/ActionsNeighbourhoodImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lib/data/storable/actions/ActionsNeighbourhoodImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lib/data/storable/user/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lib/data/storable/user/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/lib/data/storable/user/UserImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lib/data/storable/user/UserImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,6 +88,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -122,6 +125,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.1328125" />
@@ -129,6 +134,12 @@
     <property name="settings.editor.selected.configurable" value="settings.saveactions" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="data.storable" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="data.storable.user" />
       <recent name="data.storable.actions" />
@@ -162,6 +173,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StorableTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lib" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="data.storable.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="data.storable" />
+      <option name="MAIN_CLASS_NAME" value="data.storable.StorableTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
@@ -172,6 +205,7 @@
       <method v="2">
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="Remote">
@@ -185,6 +219,11 @@
         <option name="BuildArtifacts" enabled="false" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.StorableTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
@@ -211,7 +250,10 @@
       <workItem from="1610296544880" duration="2435000" />
       <workItem from="1610299871730" duration="775000" />
       <workItem from="1610300687756" duration="261000" />
-      <workItem from="1610302440635" duration="1508000" />
+      <workItem from="1610302440635" duration="3023000" />
+      <workItem from="1610307712337" duration="1671000" />
+      <workItem from="1610309615797" duration="29000" />
+      <workItem from="1610309709932" duration="7000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1610128897171</created>
@@ -276,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610303377477</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="storable constructor - name &amp;&amp; uuid">
+      <created>1610304007999</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1610304007999</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,45 +360,78 @@
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
     <state x="761" y="279" key="#Project_Structure/0.0.2560.1409@0.0.2560.1409" timestamp="1610300565889" />
-    <state x="1086" y="411" key="#com.intellij.ide.util.MemberChooser" timestamp="1610302817447">
+    <state x="1086" y="411" key="#com.intellij.ide.util.MemberChooser" timestamp="1610309322023">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state x="1086" y="411" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1409@0.0.2560.1409" timestamp="1610302817447" />
+    <state x="1086" y="411" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1409@0.0.2560.1409" timestamp="1610309322023" />
     <state x="1086" y="411" key="#com.intellij.ide.util.MemberChooser/3840.1080.1920.1034/0.0.2560.1409@0.0.2560.1409" timestamp="1610285213397" />
     <state x="1059" y="387" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1610303435045">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
     <state x="1059" y="387" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.2560.1409@0.0.2560.1409" timestamp="1610303435045" />
-    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1610291976146">
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1610309183123">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1409@0.0.2560.1409" timestamp="1610291976146" />
-    <state x="939" y="381" key="FileChooserDialogImpl" timestamp="1610291410402">
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1409@0.0.2560.1409" timestamp="1610309183123" />
+    <state x="939" y="381" key="FileChooserDialogImpl" timestamp="1610303990708">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state x="939" y="381" key="FileChooserDialogImpl/0.0.2560.1409@0.0.2560.1409" timestamp="1610291410402" />
+    <state x="939" y="381" key="FileChooserDialogImpl/0.0.2560.1409@0.0.2560.1409" timestamp="1610303990708" />
     <state x="939" y="381" key="FileChooserDialogImpl/3840.1080.1920.1034/0.0.2560.1409@0.0.2560.1409" timestamp="1610128868872" />
     <state x="1127" y="627" key="Github.Dialog.Accounts.Choose" timestamp="1610302622784">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
     <state x="1127" y="627" key="Github.Dialog.Accounts.Choose/0.0.2560.1409@0.0.2560.1409" timestamp="1610302622784" />
+    <state width="2517" height="404" key="GridCell.Tab.0.bottom" timestamp="1610309394810">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state width="2517" height="404" key="GridCell.Tab.0.bottom/0.0.2560.1409@0.0.2560.1409" timestamp="1610309394810" />
+    <state width="2517" height="404" key="GridCell.Tab.0.center" timestamp="1610309394810">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state width="2517" height="404" key="GridCell.Tab.0.center/0.0.2560.1409@0.0.2560.1409" timestamp="1610309394810" />
+    <state width="2517" height="404" key="GridCell.Tab.0.left" timestamp="1610309394810">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state width="2517" height="404" key="GridCell.Tab.0.left/0.0.2560.1409@0.0.2560.1409" timestamp="1610309394810" />
+    <state width="2517" height="404" key="GridCell.Tab.0.right" timestamp="1610309394810">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state width="2517" height="404" key="GridCell.Tab.0.right/0.0.2560.1409@0.0.2560.1409" timestamp="1610309394810" />
+    <state width="2517" height="496" key="GridCell.Tab.1.bottom" timestamp="1610307328356">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state width="2517" height="496" key="GridCell.Tab.1.bottom/0.0.2560.1409@0.0.2560.1409" timestamp="1610307328356" />
+    <state width="2517" height="496" key="GridCell.Tab.1.center" timestamp="1610307328356">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state width="2517" height="496" key="GridCell.Tab.1.center/0.0.2560.1409@0.0.2560.1409" timestamp="1610307328356" />
+    <state width="2517" height="496" key="GridCell.Tab.1.left" timestamp="1610307328356">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state width="2517" height="496" key="GridCell.Tab.1.left/0.0.2560.1409@0.0.2560.1409" timestamp="1610307328356" />
+    <state width="2517" height="496" key="GridCell.Tab.1.right" timestamp="1610307328356">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state width="2517" height="496" key="GridCell.Tab.1.right/0.0.2560.1409@0.0.2560.1409" timestamp="1610307328356" />
     <state x="782" y="350" key="SettingsEditor" timestamp="1610300916528">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
     <state x="782" y="350" key="SettingsEditor/0.0.2560.1409@0.0.2560.1409" timestamp="1610300916528" />
     <state x="782" y="350" key="SettingsEditor/3840.1080.1920.1034/0.0.2560.1409@0.0.2560.1409" timestamp="1610288907207" />
-    <state x="873" y="425" key="Vcs.Push.Dialog.v2" timestamp="1610303378599">
+    <state x="873" y="425" key="Vcs.Push.Dialog.v2" timestamp="1610304009645">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state x="873" y="425" key="Vcs.Push.Dialog.v2/0.0.2560.1409@0.0.2560.1409" timestamp="1610303378599" />
+    <state x="873" y="425" key="Vcs.Push.Dialog.v2/0.0.2560.1409@0.0.2560.1409" timestamp="1610304009645" />
     <state x="873" y="425" key="Vcs.Push.Dialog.v2/3840.1080.1920.1034/0.0.2560.1409@0.0.2560.1409" timestamp="1610284410469" />
     <state x="1085" y="573" key="classpath-attribute-editor" timestamp="1610300551127">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
     <state x="1085" y="573" key="classpath-attribute-editor/0.0.2560.1409@0.0.2560.1409" timestamp="1610300551127" />
-    <state x="1052" y="407" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1610285005240">
+    <state x="1052" y="407" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1610306834298">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
+    <state x="1052" y="407" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2560.1409@0.0.2560.1409" timestamp="1610306834298" />
     <state x="1052" y="407" key="com.intellij.testIntegration.createTest.CreateTestDialog/3840.1080.1920.1034/0.0.2560.1409@0.0.2560.1409" timestamp="1610285005240" />
     <state x="750" y="247" key="new project wizard" timestamp="1610291617618">
       <screen x="0" y="0" width="2560" height="1409" />

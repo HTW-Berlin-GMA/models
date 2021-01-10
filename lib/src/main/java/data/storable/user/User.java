@@ -6,8 +6,10 @@
 
 package data.storable.user;
 
-import data.storable.*;
-import data.storable.actions.*;
+import data.storable.Location;
+import data.storable.Storable;
+import data.storable.actions.Actions;
+import data.storable.actions.Activities;
 
 import java.util.Date;
 import java.util.List;
@@ -16,7 +18,7 @@ import java.util.Map;
 public interface User extends Storable, Location {
     boolean setUsername(String username);
 
-    boolean setFirstname(String firstname);
+    boolean setPrename(String prename);
 
     boolean setSurname(String surname);
 
@@ -26,7 +28,7 @@ public interface User extends Storable, Location {
 
     String getUsername();
 
-    String getFirstname();
+    String getPrename();
 
     String getSurname();
 

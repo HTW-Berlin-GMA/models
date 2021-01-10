@@ -14,7 +14,7 @@ import java.util.*;
 public class UserImpl implements User {
     private UUID id;
     private String username;
-    private String firstname;
+    private String prename;
     private String surname;
     private Date birthdate;
     private String eMailAddress;
@@ -51,10 +51,10 @@ public class UserImpl implements User {
         this.mapContacts = new HashMap<>();
     }
 
-    public UserImpl(UUID id, String username, String firstname, String surname, Date birthdate, String eMailAddress, String address, String houseNumber, String postCode, String city, String country, List<Activities> listInterests, List<Actions> listFavorites, List<Actions> listParticipatedActions, Map<String, List<User>> mapContacts) {
+    public UserImpl(UUID id, String username, String prename, String surname, Date birthdate, String eMailAddress, String address, String houseNumber, String postCode, String city, String country, List<Activities> listInterests, List<Actions> listFavorites, List<Actions> listParticipatedActions, Map<String, List<User>> mapContacts) {
         this.id = id;
         this.username = username;
-        this.firstname = firstname;
+        this.prename = prename;
         this.surname = surname;
         this.birthdate = birthdate;
         this.eMailAddress = eMailAddress;
@@ -77,14 +77,6 @@ public class UserImpl implements User {
         this.id = id;
     }
 
-    public String geteMailAddress() {
-        return eMailAddress;
-    }
-
-    public void seteMailAddress(String eMailAddress) {
-        this.eMailAddress = eMailAddress;
-    }
-
     public String getAddress() {
         return address;
     }
@@ -97,40 +89,20 @@ public class UserImpl implements User {
         return registryDate;
     }
 
-    public void setRegistryDate(Date registryDate) {
-        this.registryDate = registryDate;
-    }
-
     public List<Activities> getListInterests() {
         return listInterests;
-    }
-
-    public void setListInterests(List<Activities> listInterests) {
-        this.listInterests = listInterests;
     }
 
     public List<Actions> getListFavorites() {
         return listFavorites;
     }
 
-    public void setListFavorites(List<Actions> listFavorites) {
-        this.listFavorites = listFavorites;
-    }
-
     public List<Actions> getListParticipatedActions() {
         return listParticipatedActions;
     }
 
-    public void setListParticipatedActions(List<Actions> listParticipatedActions) {
-        this.listParticipatedActions = listParticipatedActions;
-    }
-
     public Map<String, List<User>> getMapContacts() {
         return mapContacts;
-    }
-
-    public void setMapContacts(Map<String, List<User>> mapContacts) {
-        this.mapContacts = mapContacts;
     }
 
     @Override
@@ -140,8 +112,8 @@ public class UserImpl implements User {
     }
 
     @Override
-    public boolean setFirstname(String firstname) {
-        this.firstname = firstname;
+    public boolean setPrename(String prename) {
+        this.prename = prename;
         return true;
     }
 
@@ -159,52 +131,53 @@ public class UserImpl implements User {
 
     @Override
     public boolean setMailAddress(String eMailAddress) {
-        return false;
+        this.eMailAddress = eMailAddress;
+        return true;
     }
 
     @Override
     public String getUsername() {
-        return username;
+        return this.username;
     }
 
     @Override
-    public String getFirstname() {
-        return firstname;
+    public String getPrename() {
+        return this.prename;
     }
 
     @Override
     public String getSurname() {
-        return surname;
+        return this.surname;
     }
 
     @Override
     public Date getBirthdate() {
-        return birthdate;
+        return this.birthdate;
     }
 
     @Override
     public String getMailAddress() {
-        return eMailAddress;
+        return this.eMailAddress;
     }
 
     @Override
     public List<Activities> listInterests() {
-        return listInterests;
+        return this.listInterests;
     }
 
     @Override
     public List<Actions> listFavorites() {
-        return listFavorites;
+        return this.listFavorites;
     }
 
     @Override
     public List<Actions> listParticipatedActions() {
-        return listParticipatedActions;
+        return this.listParticipatedActions;
     }
 
     @Override
     public Map<String, List<User>> mapContacts() {
-        return mapContacts;
+        return this.mapContacts;
     }
 
     @Override
@@ -220,7 +193,7 @@ public class UserImpl implements User {
 
     @Override
     public String getStreet() {
-        return address;
+        return this.address;
     }
 
     @Override
@@ -231,7 +204,7 @@ public class UserImpl implements User {
 
     @Override
     public String getHouseNumber() {
-        return houseNumber;
+        return this.houseNumber;
     }
 
     @Override
@@ -242,7 +215,7 @@ public class UserImpl implements User {
 
     @Override
     public String getPostCode() {
-        return postCode;
+        return this.postCode;
     }
 
     @Override
