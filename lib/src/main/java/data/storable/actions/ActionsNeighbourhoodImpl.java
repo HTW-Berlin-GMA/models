@@ -6,9 +6,10 @@
 
 package data.storable.actions;
 
-import data.storable.user.*;
+import data.storable.Storable;
+import data.storable.user.User;
+import data.storage.Storage;
 
-import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.UUID;
@@ -147,6 +148,17 @@ public class ActionsNeighbourhoodImpl implements ActionsNeighbourhood {
     }
 
     @Override
+    public boolean setHelper(Storage user_storage, UUID userID) {
+        for (Storable k : user_storage.getList()) {
+            if (k.getID().equals(userID)) {
+                this.helper = (User) k;
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
     public boolean isCompleted() {
         return this.isCompleted;
     }
@@ -154,6 +166,11 @@ public class ActionsNeighbourhoodImpl implements ActionsNeighbourhood {
     @Override
     public User getHelper() {
         return this.helper;
+    }
+
+    @Override
+    public UUID getHelperID() {
+        return this.helper.getID();
     }
 
     @Override
