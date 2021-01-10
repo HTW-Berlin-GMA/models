@@ -29,8 +29,8 @@ public class UserImpl implements User {
     private List<Actions> listParticipatedActions;
     private Map<String, List<User>> mapContacts;
 
-    public UserImpl(String id, String username) {
-        this.id = UUID.fromString(id);
+    public UserImpl(UUID id, String username) {
+        this.id = id;
         this.username = username;
         this.registryDate = new java.sql.Date((new Date()).getTime());
         this.listParticipatedActions = new ArrayList<>();
