@@ -6,9 +6,9 @@
 
 package data.storable.actions;
 
-import data.storable.*;
-import data.storable.user.*;
-import logic.exceptions.*;
+import data.storable.Storable;
+import data.storable.user.User;
+import logic.exceptions.NoParticipantsCapacityException;
 
 import java.time.LocalDate;
 import java.time.Period;
@@ -34,17 +34,23 @@ public class ActionsFreedomImpl implements ActionsFreedom {
     private User owner;
     private UUID id;
 
-    public ActionsFreedomImpl(String name, Activities activities, LocalDate dateBegin, User owner, UUID id) {
+    public ActionsFreedomImpl(String name, User owner, UUID id) {
         this.name = name;
-        this.activities = activities;
+        this.owner = owner;
+        this.id = id;
+    }
+
+    public ActionsFreedomImpl(String name, String activities, LocalDate dateBegin, User owner, UUID id) {
+        this.name = name;
+        this.activities = Activities.valueOf(activities);
         this.dateBegin = dateBegin;
         this.owner = owner;
         this.id = id;
     }
 
-    public ActionsFreedomImpl(String name, Activities activities, LocalDate dateBegin, LocalDate dateEnd, User owner, UUID id) {
+    public ActionsFreedomImpl(String name, String activities, LocalDate dateBegin, LocalDate dateEnd, User owner, UUID id) {
         this.name = name;
-        this.activities = activities;
+        this.activities = Activities.valueOf(activities);
         this.dateBegin = dateBegin;
         this.dateEnd = dateEnd;
         this.duration = Period.between(dateBegin, dateEnd);
@@ -52,9 +58,9 @@ public class ActionsFreedomImpl implements ActionsFreedom {
         this.id = id;
     }
 
-    public ActionsFreedomImpl(String name, Activities activities, LocalDate dateBegin, Period duration, User owner, UUID id) {
+    public ActionsFreedomImpl(String name, String activities, LocalDate dateBegin, Period duration, User owner, UUID id) {
         this.name = name;
-        this.activities = activities;
+        this.activities = Activities.valueOf(activities);
         this.dateBegin = dateBegin;
         this.duration = duration;
         this.dateEnd = dateBegin.plus(duration);

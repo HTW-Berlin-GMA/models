@@ -30,17 +30,23 @@ public class ActionsNeighbourhoodImpl implements ActionsNeighbourhood {
     private Boolean isCompleted;
     private User helper;
 
-    public ActionsNeighbourhoodImpl(String name, Activities activities, LocalDate dateBegin, User owner, UUID id) {
+    public ActionsNeighbourhoodImpl(String name, User owner, UUID id) {
         this.name = name;
-        this.activities = activities;
+        this.owner = owner;
+        this.id = id;
+    }
+
+    public ActionsNeighbourhoodImpl(String name, String activities, LocalDate dateBegin, User owner, UUID id) {
+        this.name = name;
+        this.activities = Activities.valueOf(activities);
         this.dateBegin = dateBegin;
         this.owner = owner;
         this.id = id;
     }
 
-    public ActionsNeighbourhoodImpl(String name, Activities activities, LocalDate dateBegin, LocalDate dateEnd, User owner, UUID id) {
+    public ActionsNeighbourhoodImpl(String name, String activities, LocalDate dateBegin, LocalDate dateEnd, User owner, UUID id) {
         this.name = name;
-        this.activities = activities;
+        this.activities = Activities.valueOf(activities);
         this.dateBegin = dateBegin;
         this.dateEnd = dateEnd;
         this.duration = Period.between(dateBegin, dateEnd);
@@ -48,9 +54,9 @@ public class ActionsNeighbourhoodImpl implements ActionsNeighbourhood {
         this.id = id;
     }
 
-    public ActionsNeighbourhoodImpl(String name, Activities activities, LocalDate dateBegin, Period duration, User owner, UUID id) {
+    public ActionsNeighbourhoodImpl(String name, String activities, LocalDate dateBegin, Period duration, User owner, UUID id) {
         this.name = name;
-        this.activities = activities;
+        this.activities = Activities.valueOf(activities);
         this.dateBegin = dateBegin;
         this.duration = duration;
         this.dateEnd = dateBegin.plus(duration);
@@ -58,9 +64,9 @@ public class ActionsNeighbourhoodImpl implements ActionsNeighbourhood {
         this.id = id;
     }
 
-    public ActionsNeighbourhoodImpl(String name, Activities activities, LocalDate dateBegin, LocalDate dateEnd, Period duration, User owner, UUID id, Boolean isCompleted, User helper) {
+    public ActionsNeighbourhoodImpl(String name, String activities, LocalDate dateBegin, LocalDate dateEnd, Period duration, User owner, UUID id, Boolean isCompleted, User helper) {
         this.name = name;
-        this.activities = activities;
+        this.activities = Activities.valueOf(activities);
         this.dateBegin = dateBegin;
         this.dateEnd = dateEnd;
         this.duration = duration;
