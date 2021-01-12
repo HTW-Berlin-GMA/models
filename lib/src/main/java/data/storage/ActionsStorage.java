@@ -9,15 +9,12 @@ package data.storage;
 import data.storable.Storable;
 
 import java.math.BigDecimal;
-import java.util.LinkedHashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class ActionsStorage implements Storage {
     private BigDecimal size;
     private List<Storable> listActions;
-    private Map<Storable, List<Storable>> mapActions;
+    private Map<UUID, Storable> mapActions;
 
     public ActionsStorage(BigDecimal size) {
         this.size = size;
@@ -33,7 +30,7 @@ public class ActionsStorage implements Storage {
     }
 
     @Override
-    public Map<Storable, List<Storable>> getMap() {
+    public Map<UUID, Storable> getMap() {
         return mapActions;
     }
 

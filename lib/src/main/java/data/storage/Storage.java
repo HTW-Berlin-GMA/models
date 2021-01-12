@@ -11,6 +11,7 @@ import data.storable.Storable;
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 /**
  * The interface Storage.
@@ -28,7 +29,7 @@ public interface Storage {
      *
      * @return the map
      */
-    Map<Storable, List<Storable>> getMap();
+    Map<UUID, Storable> getMap();
 
     /**
      * Gets size.

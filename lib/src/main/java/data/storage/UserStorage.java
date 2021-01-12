@@ -9,10 +9,7 @@ package data.storage;
 import data.storable.Storable;
 
 import java.math.BigDecimal;
-import java.util.LinkedHashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * The type User data.storage.
@@ -20,7 +17,7 @@ import java.util.Map;
 public class UserStorage implements Storage {
     private BigDecimal size;
     private List<Storable> listUsers;
-    private Map<Storable, List<Storable>> mapUsers;
+    private Map<UUID, Storable> mapUsers;
 
     /**
      * Instantiates a new User data.storage.
@@ -49,7 +46,7 @@ public class UserStorage implements Storage {
     }
 
     @Override
-    public Map<Storable, List<Storable>> getMap() {
+    public Map<UUID, Storable> getMap() {
         return mapUsers;
     }
 
