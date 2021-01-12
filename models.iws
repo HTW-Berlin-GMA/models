@@ -25,16 +25,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0a06840-f76d-421e-b0e4-348bb01199d1" name="Default Changelist" comment="storable constructor - name &amp;&amp; uuid">
-      <change afterPath="$PROJECT_DIR$/lib/src/test/java/data/storable/StorableTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/lib.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lib/lib.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/data/storable/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/data/storable/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/data/storable/user/UserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/data/storable/user/UserImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/models.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models.iws" beforeDir="false" afterPath="$PROJECT_DIR$/models.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/models_jar/models.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/models_jar/models.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lib/data/storable/user/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lib/data/storable/user/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lib/data/storable/user/UserImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lib/data/storable/user/UserImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +120,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.1328125" />
     <property name="project.structure.side.proportion" value="0.18993135" />
     <property name="settings.editor.selected.configurable" value="settings.saveactions" />
@@ -254,6 +246,8 @@
       <workItem from="1610307712337" duration="1671000" />
       <workItem from="1610309615797" duration="29000" />
       <workItem from="1610309709932" duration="7000" />
+      <workItem from="1610314647589" duration="54000" />
+      <workItem from="1610462934841" duration="43000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1610128897171</created>
@@ -325,7 +319,21 @@
       <option name="project" value="LOCAL" />
       <updated>1610304007999</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="storable constructor - name &amp;&amp; uuid">
+      <created>1610314664298</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1610314664298</updated>
+    </task>
+    <task id="LOCAL-00012" summary="storable constructor - name &amp;&amp; uuid">
+      <created>1610314691703</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1610314691703</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,10 +386,10 @@
     </state>
     <state x="939" y="381" key="FileChooserDialogImpl/0.0.2560.1409@0.0.2560.1409" timestamp="1610303990708" />
     <state x="939" y="381" key="FileChooserDialogImpl/3840.1080.1920.1034/0.0.2560.1409@0.0.2560.1409" timestamp="1610128868872" />
-    <state x="1127" y="627" key="Github.Dialog.Accounts.Choose" timestamp="1610302622784">
+    <state x="1127" y="627" key="Github.Dialog.Accounts.Choose" timestamp="1610314671452">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state x="1127" y="627" key="Github.Dialog.Accounts.Choose/0.0.2560.1409@0.0.2560.1409" timestamp="1610302622784" />
+    <state x="1127" y="627" key="Github.Dialog.Accounts.Choose/0.0.2560.1409@0.0.2560.1409" timestamp="1610314671452" />
     <state width="2517" height="404" key="GridCell.Tab.0.bottom" timestamp="1610309394810">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
@@ -414,15 +422,15 @@
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
     <state width="2517" height="496" key="GridCell.Tab.1.right/0.0.2560.1409@0.0.2560.1409" timestamp="1610307328356" />
-    <state x="782" y="350" key="SettingsEditor" timestamp="1610300916528">
+    <state x="782" y="350" key="SettingsEditor" timestamp="1610462976989">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
     <state x="782" y="350" key="SettingsEditor/0.0.2560.1409@0.0.2560.1409" timestamp="1610300916528" />
-    <state x="782" y="350" key="SettingsEditor/3840.1080.1920.1034/0.0.2560.1409@0.0.2560.1409" timestamp="1610288907207" />
-    <state x="873" y="425" key="Vcs.Push.Dialog.v2" timestamp="1610304009645">
+    <state x="782" y="350" key="SettingsEditor/3840.1080.1920.1034/0.0.2560.1409@0.0.2560.1409" timestamp="1610462976989" />
+    <state x="873" y="425" key="Vcs.Push.Dialog.v2" timestamp="1610314692951">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state x="873" y="425" key="Vcs.Push.Dialog.v2/0.0.2560.1409@0.0.2560.1409" timestamp="1610304009645" />
+    <state x="873" y="425" key="Vcs.Push.Dialog.v2/0.0.2560.1409@0.0.2560.1409" timestamp="1610314692951" />
     <state x="873" y="425" key="Vcs.Push.Dialog.v2/3840.1080.1920.1034/0.0.2560.1409@0.0.2560.1409" timestamp="1610284410469" />
     <state x="1085" y="573" key="classpath-attribute-editor" timestamp="1610300551127">
       <screen x="0" y="0" width="2560" height="1409" />

@@ -95,8 +95,8 @@
       <module fileurl="file://$PROJECT_DIR$/models.iml" filepath="$PROJECT_DIR$/models.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_14" project-jdk-name="15" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/out" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_14" default="false" project-jdk-name="15" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/../lib" />
   </component>
   <component name="SaveActionSettings">
     <option name="actions">
@@ -117,7 +117,6 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
   <component name="accountSettings">
-    <option name="activeRegion" value="us-east-1" />
     <option name="recentlyUsedRegions">
       <list>
         <option value="us-east-1" />
